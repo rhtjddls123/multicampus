@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Jeju</title>
+    <style>
+      body {
+        justify-items: center;
+      }
+      header,
+      main,
+      footer {
+        margin-top: 1rem;
+        width: 70%;
+      }
+      #header-nav {
+        display: flex;
+        background-color: rgb(63, 63, 155);
+        padding: 0 1rem;
+      }
+      #header-nav > a {
+        color: white;
+        text-decoration: none;
+      }
+      #header-ul {
+        display: flex;
+        margin: 0;
+        padding: 0 2rem;
+        align-items: flex-end;
+      }
+      .header-li {
+        padding: 0.7rem 2rem;
+      }
+      .header-li > a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      section {
+        padding: 1rem 5rem;
+        padding-bottom: 0;
+      }
+      section > article {
+        display: flex;
+        gap: 2rem;
+      }
+      section > article > img {
+        border-radius: 16px;
+      }
+      /* .main-section-1{} */
+      /* .main-section-2{} */
+
+      #footer-ul {
+        display: flex;
+      }
+      .footer-li {
+        padding: 0 2rem;
+      }
+      .footer-li > a {
+        text-decoration: none;
+        color: black;
+      }
+      #footer-ul > hr {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        line-height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 헤더 섹션 -->
+    <header>
+      <nav id="header-nav">
+        <a href=""><h1>Dream Jeju</h1></a>
+        <ul id="header-ul">
+          <li class="header-li"><a href="">단체 여행</a></li>
+          <li class="header-li"><a href="">맞춤 여행</a></li>
+          <li class="header-li"><a href="">갤러리</a></li>
+          <li class="header-li"><a href="">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main>
+      <!-- 섹션 1 -->
+      <section id="main-section-1">
+        <h2>몸과 마음이 치유되는 섬</h2>
+        <article>
+          <img
+            src="./images/IMG_4361.JPG"
+            alt="몸과 마음이 치유되는 섬 이미지"
+            width="400"
+            height="220"
+          />
+          <div>
+            <p><b>쉼(Healing)의 공간으로 안내합니다</b></p>
+            <p>
+              탁 트인 바다, 시원한 바람에 몸을 맡기고 뚜벅뚜벅 오름을 오르고 올렛길을 걷다보면
+              온전히 나에게 집중할 수 있습니다.
+            </p>
+            <h3>상세 일정</h3>
+            <ul style="padding: 0">
+              <li style="padding-bottom: 0.5rem">여행 기간: 2박 3일</li>
+              <li>여행 일정: (여행 일정은 상담을 통해 결정 및 조정 가능합니다.)</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- 섹션 2 -->
+      <section id="main-section-2">
+        <h2>다양한 액티비티가 기다리는 섬</h2>
+        <article>
+          <img
+            src="./images/IMG_4361.JPG"
+            alt="몸과 마음이 치유되는 섬 이미지"
+            width="400"
+            height="220"
+          />
+          <div>
+            <p><strong>모험과 스릴이 넘치는 레저의 천국으로 안내합니다.</strong></p>
+            <p>둘러보기만 하는 여행을 하셨나요?</p>
+            <p>
+              하늘을 날며 시원한 바다를 내려다보는 패러글라이딩과 투명한 물빛 속을 여행하는
+              스킨스쿠버... 아름다운 제주 해안도로를 씽씽 전동바이크나 전동킥보드로 달려보세요.
+              시원한 바다를 가까이에서 느낄 수 있는 요트 체험과 배낚시도 빼놓을 수 없겠죠?
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer>
+      <hr />
+      <ul id="footer-ul">
+        <li class="footer-li"><a href="">회사 소개</a></li>
+        <hr />
+        <li class="footer-li"><a href="">개인정보처리방침</a></li>
+        <hr />
+        <li class="footer-li"><a href="">여행약관</a></li>
+        <hr />
+        <li class="footer-li"><a href="">사이트맵</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
