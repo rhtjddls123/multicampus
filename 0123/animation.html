@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .o {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 30px;
+        perspective: 300px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #fa0;
+        animation-name: slideRight;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes slideRight {
+        from {
+          transform: rotateX(0);
+        }
+        to {
+          transform: rotateX(3600deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="o">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      i {
+        font-size: 5rem;
+        position: relative;
+      }
+      i::after {
+        content: "4";
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        align-items: center;
+        position: absolute;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        top: -0.6rem;
+        right: -0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <i class="fa-regular fa-bell"></i>
+    </div>
+  </body>
+</html>

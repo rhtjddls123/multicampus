@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rotate</title>
+    <style>
+      .origin {
+        width: 152px;
+        height: 180px;
+        border: 1px solid black;
+        margin: 30px;
+        float: left;
+        perspective: 300px;
+      }
+      .origin > div {
+        width: 152px;
+        height: 180px;
+        transition: 10s;
+      }
+      .rotate1:hover {
+        transform: rotateX(54000deg);
+      }
+      .rotate2:hover {
+        transform: rotateY(54000deg);
+      }
+      .rotate3:hover {
+        transform: rotateZ(54000deg);
+      }
+      .rotate4:hover {
+        transform: rotate3d(2.5, 1.2, -1.5, 54000deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="origin">
+      <div class="rotate1">
+        <img src="./images/sunset.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotate2">
+        <img src="./images/sunset.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotate3">
+        <img src="./images/sunset.jpg" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotate4">
+        <img src="./images/sunset.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
