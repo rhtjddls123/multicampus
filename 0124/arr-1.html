@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array 객체의 메서드</title>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        const nums = [1, 2, 3];
+        const chars = ["a", "b", "c", "d"];
+
+        const numsChars = nums.concat(chars);
+        const charsNums = chars.concat(nums);
+        document.write(`
+        nums에 chars를 합치면 ${numsChars}
+        <br>
+        chars에 nums를 합치면 ${charsNums}
+        <hr>
+        `);
+
+        const string1 = nums.join();
+        document.write(`구분자 없이: ${string1}<br>`);
+        const string2 = nums.join("-");
+        document.write(`구분자 지정: ${string2}<hr>`);
+
+        const ret1 = nums.push(4, 5);
+        document.write(`length: ${ret1} | 배열: ${nums}<br>`);
+        const ret2 = nums.unshift(0);
+        document.write(`length: ${ret2} | 배열: ${nums}<hr>`);
+
+        const poped1 = chars.pop();
+        document.write(`꺼낸 요소: ${poped1} | 배열: ${chars}<br>`);
+        const shift1 = chars.shift();
+        document.write(`꺼낸 요소: ${shift1} | 배열: ${chars}<hr>`);
+      </script>
+    </div>
+  </body>
+</html>

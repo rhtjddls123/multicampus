@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1부터 n까지 더하기</title>
+  </head>
+  <body>
+    <h1 id="result">hi</h1>
+
+    <script>
+      const n = prompt("숫자를 입력해주세요");
+      const h1 = document.querySelector("#result");
+      if (!isNaN(+n)) {
+        let result = 0;
+        for (let i = 1; i <= +n; i += 1) {
+          result += i;
+        }
+        h1.innerHTML = `1부터 ${n}까지 더하면 ${result}`;
+      } else {
+        h1.innerHTML = `숫자를 입력하세요`;
+      }
+    </script>
+  </body>
+</html>

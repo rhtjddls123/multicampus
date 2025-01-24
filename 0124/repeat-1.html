@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1에서 5까지 더하기</title>
+  </head>
+  <body>
+    <script>
+      let sum = 0;
+      for (let i = 0; i < 5; i += 1) {
+        sum += i + 1;
+      }
+      document.write(`1부터 5까지 더하면 ${sum}`);
+
+      for (let i = 1; i < 10; i += 1) {
+        document.write(`<h3>${i}단</h3>`);
+        for (let j = 1; j < 10; j += 1) {
+          document.write(`${i} * ${j} = ${i * j}<br>`);
+        }
+      }
+    </script>
+  </body>
+</html>
